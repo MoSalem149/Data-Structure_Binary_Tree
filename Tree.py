@@ -1,5 +1,5 @@
 class BinaryTree:
-    def _init_(self, root):
+    def __init__(self, root):
         # Initialize the BinaryTree with a root value, and set left and right children to None.
         self.key = root
         self.left_child = None
@@ -69,10 +69,10 @@ root = BinaryTree('a')
 print("root value:", root.get_root_val())
 print("left child:", root.get_left_child())
 root.insert_left('b')
-print("left child:", root.get_left_child().get_root_val())  # Corrected line
+print("left child:", root.get_left_child().get_root_val())
 print("root of left subtree:", root.get_left_child().get_root_val())
 root.insert_right('c')
-print("right child:", root.get_right_child().get_root_val())  # Corrected line
+print("right child:", root.get_right_child().get_root_val())
 print("root of right subtree:", root.get_right_child().get_root_val())
 root.get_right_child().set_root_val("hello")
-print("root of right subtree:", root.get_right_child().get_root_val())
+print("root of right subtree:", root.get_right_child().get_root_val())  
